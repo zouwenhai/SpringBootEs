@@ -1,0 +1,7 @@
+server:
+  port: 7081
+spring:
+  elasticsearch:
+    jest:
+      connection-timeout:
+      uris:
