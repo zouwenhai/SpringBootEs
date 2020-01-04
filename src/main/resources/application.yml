@@ -1,7 +1,14 @@
 server:
   port: 7081
 spring:
-  elasticsearch:
-    jest:
-      connection-timeout:
-      uris:
+  data:
+    elasticsearch:
+      cluster-nodes: 49.233.86.230:9300
+      cluster-name: elasticsearch_production
+      repositories:
+        enabled: true
+      properties:
+        transport:
+          tcp:
+            connect_timeout: 120s
+

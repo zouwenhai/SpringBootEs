@@ -1,7 +1,8 @@
 package com.example.SpringBootEs.dao;
 
-import com.example.SpringBootEs.entity.Product;
+import com.example.SpringBootEs.entity.EmployeeEs;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * @author zouwenhai
@@ -9,10 +10,8 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
  * @date 2019/10/27 16:02
  * @work //TODO
  */
-public interface ProductRepository extends ElasticsearchRepository<Product, String> {
-
-
-
+@Repository
+public interface EmployeeRepository extends ElasticsearchRepository<EmployeeEs, Long> {
 
 
 }
